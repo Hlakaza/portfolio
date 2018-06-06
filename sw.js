@@ -6,7 +6,7 @@ self.addEventListener('install', e => {
       caches.open('lucky-app-cache').then(cache => {
           // add all URLs of resources we want to cache
           return cache.addAll([
-		    '/',
+		    '/portfolio/',
             '/index.html',
             '/contact.html',
             '/images/favicon.png',
@@ -20,6 +20,7 @@ self.addEventListener('install', e => {
             '/images/slider.jpg',
             '/images/logo.png',
             '/images/logo.png',
+            '/images',
             '/css/main.css',
             '/css/bootstrap.min.css',
             '/MailHandler.ashx',
