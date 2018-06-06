@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Tell iOS it's a PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000">
+
+    <title>Portfolio</title>
+    <meta name="description" content="Siphathisiwe lucky Hlakaza, Front end web developer, web designer">  
+    <!-- CSS Files
+    ================================================== -->
+    <!-- Twitter Bootstrs CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Ionicons Fonts Css -->
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Hero area slider css-->
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- owl craousel css -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <!--  main css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Javascript Files
+    ================================================== -->
+    <!-- modernizr js -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- owl carouserl js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- bootstrap js -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <!-- slider js -->
+    <script src="js/slider.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <!--  main js -->
+    <script src="js/main.js"></script>
+    <script src="js/validate.js"></script>
+</head>
+<body>
+    <!--
+    ==================================================
+    Header Section Start
+    ================================================== -->
+    <header id="top-bar" class="navbar-fixed-top animated-header">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- /responsive nav button -->
+                <!-- logo -->
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <!-- /logo -->
+            </div>
+            <!-- main menu -->
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <div class="main-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#works">Work</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /main nav -->
+        </div>
+    </header>
+
+    <!--
+    ==================================================
+        Global Page Section Start
+    ================================================== -->
+    <section class="global-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h2>Contact</h2>
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="index.html">
+                                    <i class="ion-ios-home"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="active">Contact</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#page-header-->
+    <!--
+    ==================================================
+        Contact Section Start
+    ================================================== -->
+    <section id="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="detailsSuccess" style="display: none">
+                    <div>
+                        <b>Thank You</b><br /> Your message has been sent, I will be in touch with you soon.
+                    </div>
+                </div>
+                <div class="col-md-6 this-hide">
+                    <div class="block">
+                        <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contact Me</h2>
+                        <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                            If you would like to work with me fill in your details i wll contact you.
+                        </p>
+                        <p class="subtitle-des" style="display: none; color: red;"  id="error" >
+                            Please fill in All Required fields!
+                        </p>
+                        <div class="contact-form">
+                            <form id="contact-form" method="post" action="MailHandler.ashx" role="form">
+
+                                <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                    <input type="text" placeholder="Full Name" class="form-control" name="name" id="name">
+                                </div>
+
+                                <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                                    <input type="email" placeholder="Email" class="form-control" name="email" id="email">
+                                </div>
+
+                                <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                    <input type="text" placeholder="Contact Number" class="form-control" name="phone" id="phone">
+                                </div>
+
+                                <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
+                                    <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+                                </div>
+
+
+                                <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                    <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Send Message">
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row address-details">
+                        <div class="col-xs-12">
+                            <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                                <i class="ion-ios-location-outline"></i>
+                                <h5>45 Kerk Street , johannesburg CBD <br>South Africa,2001</h5>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
+                                <i class="ion-ios-email-outline"></i>
+                                <p>nhlalucky9@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+                                <i class="ion-ios-telephone-outline"></i>
+                                <p>(+27) 073 408 4441</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--
+    ==================================================
+        Call To Action Section Start
+    ================================================== -->
+   
+
+
+    <!--
+    ==================================================
+        Footer Section Start
+    ================================================== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="col-md-8">
+                <p class="copyright">
+                    Copyright: <span>
+                        <script>document.write(new Date().getFullYear())</script>
+                    </span>. Siphathiswe Lucky Hlakaza
+                </p>
+            </div>
+            <div class="col-md-4">
+                <!-- Social Media -->
+                <ul class="social">
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100005988886547" class="Facebook">
+                            <i class="ion-social-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/LuckyMrMatch" class="Twitter">
+                            <i class="ion-social-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/siphathisiwe-lucky-hlakaza-753a9b10b?trk=hp-identity-name" class="Linkedin">
+                            <i class="ion-social-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer> <!-- /#footer -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-72528882-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
+
+
